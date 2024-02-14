@@ -1,0 +1,263 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #001f3f, #0d0d0d);
+
+}
+
+
+.branch {
+    position: relative;
+    right: -50%;
+    bottom: -230px;
+    width: 15px;
+    height: 330px;
+    background-color: darkgreen;
+    border-top-left-radius: 50% 60px; 
+    border-top-right-radius: 50% 60px;
+    animation-iteration-count: infinite;
+    animation: glowing-branch 2s infinite alternate, bouncing 2.5s infinite;
+}
+
+@keyframes bouncing {
+    0% {
+        bottom: -230px; /* Start position */
+    }
+    50% {
+        bottom: -220px; /* Middle position */
+    }
+    100% {
+        bottom: -230px; /* End position, return to start */
+    }
+
+    }
+
+    @keyframes glowing-branch {
+        0%, 100% {
+            box-shadow: 0 0 10px 0 rgba(0, 100, 0, 0.5); /* Initial and final shadow */
+        }
+        50% {
+            box-shadow: 0 0 20px 10px rgba(0, 100, 0, 0.5); /* Middle shadow */
+        }
+    }
+
+
+.petals {
+    position: relative;
+    top: -1px;
+    right: 65%;
+}
+
+
+
+.petal1 {
+    background-color: thistle;
+    position: relative;
+    right: 30px;
+    top: -80px;
+    height: 100px;
+    width: 50px;
+    border-radius: 100%;
+    transform: rotate(-35deg);
+    animation: glowing-petal1 2s infinite alternate;
+
+}
+
+@keyframes glowing-petal1 {
+    0%, 100% {
+        box-shadow: 0 0 10px 0 rgba(211, 158, 223, 0.5); /* Initial and final shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(211, 158, 223, 0.5); /* Middle shadow */
+    }
+}
+
+
+.petal2 {
+    background-color: thistle;
+    position: relative;
+    right: -13px;
+    top: -180px;
+    height: 100px;
+    width: 50px;
+    border-radius: 100%;
+    transform: rotate(-143deg) scaleX(-1);
+    animation: glowing-petal2 2s infinite alternate;
+}
+
+@keyframes glowing-petal2 {
+    0%, 100% {
+        box-shadow: 0 0 10px 0 rgba(211, 158, 223, 0.5); /* Initial and final shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(211, 158, 223, 0.5); /* Middle shadow */
+    }
+}
+
+
+.petal3 {
+    background-color: rgb(226, 148, 226);
+    position: relative;
+    right: 55%;
+    top: -298px;
+    height: 112px;
+    width: 50px;
+    border-radius: 100%;
+    animation: glowing-petal3 2s infinite alternate;
+}
+
+@keyframes glowing-petal3 {
+    0%, 100% {
+        box-shadow: 0 0 10px 0 rgba(211, 158, 223, 0.5); /* Initial and final shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(211, 158, 223, 0.5); /* Middle shadow */
+    }
+}
+
+.leaf {
+    background-color: darkgreen;
+    position: relative;
+    bottom: 150px;
+    right: 45px;
+    height: 100px;
+    width: 30px;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+    animation: glowing-leaf 2s infinite alternate;
+}
+
+@keyframes glowing-leaf {
+    0%, 100% {
+        box-shadow: 0 0 10px 0 rgba(0, 100, 0, 0.5); /* Initial and final shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(0, 100, 0, 0.5); /* Middle shadow */
+    }
+}
+
+
+.leaf2 {
+    background-color: darkgreen;
+    position: relative;
+    bottom: 249px;
+    right: -29px;
+    height: 100px;
+    width: 30px;
+    border-radius: 100%;
+    transform: rotate(-135deg);
+    animation: glowing-leaf2 2s infinite alternate;
+}
+
+@keyframes glowing-leaf2 {
+    0%, 100% {
+        box-shadow: 0 0 10px 0 rgba(0, 100, 0, 0.5); /* Initial and final shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(0, 100, 0, 0.5); /* Middle shadow */
+    }
+}
+
+.lightbug {
+    background-color: white;
+    position: relative;
+    top: -155px;
+    right: -50%;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    animation: glowing-bug 2s infinite alternate, moving-bug 5s linear infinite;
+}
+
+@keyframes glowing-bug {
+    0%, 100% {
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5); /* Initial and final shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5); /* Middle shadow */
+    }
+}
+
+@keyframes moving-bug {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translate(100px) rotate(-360deg);
+    }
+}
+
+audio {
+    display: none;
+}
+
+.star {
+    position: relative;
+    z-index: -1;
+    top: -550px;
+    right: 50px;
+    width: 4px;
+    height: 4px;
+    background-color: #FFD700; /* Gold color */
+    border-radius: 50%;
+    animation: glowing-star 2s infinite alternate, sparkle-animation 1s linear infinite, scatter-animation 5s linear infinite;
+}
+
+@keyframes glowing-star {
+    0%, 100% {
+        box-shadow: 0 0 10px 0 rgba(255, 215, 0, 0.5); /* Initial and final shadow */
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.5); /* Middle shadow */
+    }
+}
+
+@keyframes sparkle-animation {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% -100%;
+    }
+}
+
+
+
+.grass {
+    position: relative;
+    bottom: -170px;
+    right: 55px;
+    background-color: green;
+    height: 30px;
+    width: 104.7%;
+
+}
+
+.soil {
+    position: relative;
+    bottom: -230px;
+    right: 55px;
+    background-color: rgb(139, 69, 19);
+    height: 39px;
+    width: 104.7%;
+}
+
+.curtain {
+    background-color: darkred;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: height 4s ease; /* Add transition for smooth animation */
+    height: 100%; /* Initially cover the entire viewport */
+    z-index: 9999; /* Ensure the curtain is above other content */
+}
+
+.curtain.uncover {
+    height: 0; /* Adjust height to uncover the website */
+}

@@ -1,0 +1,165 @@
+body {
+    background-color: pink;
+
+}
+
+h1 {
+    position: relative;
+    /*left: 450px;*/
+    font-family:  Lobster, cursive;
+    font-size: 55px;
+    bottom: -200px;
+    animation: pumping1 0.8s linear infinite;
+    color: white;
+    font-weight: 1000;
+}
+
+@keyframes pumping1 {
+    0%{
+        transform: rotate(-0deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-0deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-0deg) scale(1.08);
+    }
+}
+
+h2 {
+    position: relative;
+    /*left: 457px;*/
+    bottom: -200px;
+    font-family:  Lobster, cursive;
+    font-size: 25px;
+}
+
+.m0 {
+    position: relative;
+    /*left: 36px;*/
+    bottom: -300px;
+    font-family:  Lobster, cursive;
+    font-size: 25px;
+    
+}
+
+.m1 {
+    position: relative;
+    /*left: -110px;*/
+    bottom: -800px;
+    font-family:  Lobster, cursive;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    line-height: 1.5;
+    text-align: right;
+    
+}
+
+.m1 p {
+    margin: 10px 0;
+}
+
+.cat1 {
+    position: relative;
+    bottom: -580px;
+    right: -50px;
+}
+
+.cat2 {
+    position: relative;
+    bottom: -1200px;
+    right: -1000px;
+}
+
+.cat3 {
+    position: relative;
+    bottom: -900px;
+    right: -700px;
+}
+
+.cat4 {
+    position: relative;
+    bottom: -1700px;
+    left: 500px;
+}
+
+.gif {
+    position: relative;
+    top: -1500px;
+
+}
+
+.m2 {
+    position: relative;
+    /*right: 718px;*/
+    bottom: -345px;
+    font-family:  Lobster, cursive;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.m2 p {
+    margin: 10px 0;
+}
+
+.m3 {
+    position: relative;
+    /*left: -110px;*/
+    bottom: -800px;
+    font-family:  Lobster, cursive;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    line-height: 1.5;
+    
+}
+
+.m3 p {
+    margin: 10px 0;
+}
+
+button {
+    background-color: red;
+    border: none;
+    font-size: 20px;
+    height: 65px;
+    width: 200px;
+    position: relative;
+    bottom: -1450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family:  Lobster, cursive;
+    color: white;
+    
+}
+
+button:hover {
+    animation: pumping 0.7s linear infinite;
+}
+
+@keyframes pumping{
+    0%{
+        transform: rotate(-0deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-0deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-0deg) scale(1.08);
+    }
+}
+
+.footer {
+    height: 150px;
+    background-color: pink;
+    padding: 50px;
+    position: relative;
+    bottom: -1600px;
+}
